@@ -52,6 +52,25 @@ a {
   color: #fff;
 }
 
+.btn-third {
+  background-color: #fff;
+  color: var(--light-blue);
+  border: 1px solid #fff;
+}
+
+.btn-forth {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-forth:hover {
+  background-color: #fff;
+  color: var(--dark--gray);
+}
+.btn-third:hover {
+  background-color: var(--light-blue);
+}
 .btn-secondary:hover {
   background-color: #4c4f6e;
 }
@@ -106,6 +125,7 @@ p {
   background-color: white;
   top: 0;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 3;
 }
 
 #home .navbar nav {
@@ -178,7 +198,9 @@ p {
 
 /* about start */
 
-#about {
+#about,
+#help,
+#services {
   padding: 6rem 0;
 }
 
@@ -233,7 +255,8 @@ p {
 /* about end*/
 
 /*Info Start*/
-#info {
+#info,
+#brand {
   background: url("./img/info-bg.jpg") no-repeat center center/cover;
   padding: 6rem 0;
   position: relative;
@@ -241,7 +264,9 @@ p {
   color: #fff;
 }
 
-#info::before {
+#info::before,
+#call::before,
+#brand::before {
   content: "";
   position: absolute;
   top: 0;
@@ -287,3 +312,191 @@ p {
 }
 
 /*Info End*/
+
+/*Help Start*/
+
+#help .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  column-gap: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#help .row .col {
+  position: relative;
+  font-size: 20px;
+  color: var(--light-blue);
+}
+
+#help .row .col i {
+  font-size: 40px;
+  color: var(--light-blue);
+  padding: 10px;
+}
+
+#help .row .col h3 {
+  margin: 20px 0;
+  color: var(--dark--gray);
+}
+
+/* #help .row .col:first-child {
+  background-color: red;
+} */
+
+#help .row .col:first-child::before,
+#help .row .col:nth-child(2)::before {
+  content: "";
+  border-bottom: 4px dotted var(--light-blue);
+  width: 118px;
+  position: absolute;
+  top: 40px;
+  right: -75px;
+}
+/*Help End*/
+
+/* call start */
+
+#call {
+  background: url("/img/call-bg.jpg") no-repeat center center/cover;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#call .call-content {
+  max-width: 600px;
+  margin: auto;
+}
+#call .call-content h2 {
+  font-size: 35px;
+  color: #fff;
+}
+
+#call .call-content p {
+  color: var(--bg--white);
+  margin: 25px 0;
+  font-size: 15px;
+}
+
+#call .call-content a {
+  margin-right: 25px;
+  color: var(--dark--gray);
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+/* call end */
+
+/*  Services Start  */
+
+#services .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 3rem;
+  margin-top: 5rem;
+}
+
+#services .row .item {
+  margin-bottom: 10px;
+  color: var(--light-blue);
+  display: flex;
+}
+
+#services .row .item i {
+  font-size: 40px;
+  margin-right: 1rem;
+}
+
+#services .row .item h3 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+#services .row .item p {
+  max-width: 300px;
+}
+
+/*  Services End  */
+
+/*price-list start*/
+
+#price-list {
+  background-color: var(--bg--white);
+  padding: 6rem 0;
+}
+
+#price-list .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  margin-top: 5rem;
+}
+
+#price-list .row .col {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border: 1px solid #ddd;
+}
+
+#price-list .row .col .price-details {
+  text-align: center;
+}
+#price-list .row .col .price-details i {
+  font-size: 60px;
+  color: var(--light-blue);
+}
+
+#price-list .row .col .price-details h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+#price-list .row .col .price-details p {
+  font-size: 30px;
+  color: var(--light-blue);
+  font-weight: 600;
+}
+
+#price-list .row .col .price-details span {
+  font-size: 15px;
+  color: var(--light--gray);
+  font-weight: 500;
+}
+
+#price-list .row .col ul {
+  margin-top: 2rem;
+}
+
+#price-list .row .col ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light--gray);
+  margin: 1rem;
+}
+
+#price-list .row .col ul li i.fa-circle-check {
+  color: var(--light-blue);
+}
+
+#price-list .row .col a {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+/*price-list end*/
+
+#brand .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#brand .row img {
+  max-width: 200px;
+}
