@@ -200,7 +200,9 @@ p {
 
 #about,
 #help,
-#services {
+#services,
+#blogs,
+#contact {
   padding: 6rem 0;
 }
 
@@ -423,7 +425,9 @@ p {
 
 /*price-list start*/
 
-#price-list {
+#price-list,
+#doctors,
+#contact {
   background-color: var(--bg--white);
   padding: 6rem 0;
 }
@@ -499,4 +503,208 @@ p {
 
 #brand .row img {
   max-width: 200px;
+  margin-bottom: 20px;
 }
+
+/* Doctors start*/
+
+#doctors .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#doctors .row .col {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border: 1px solid #ddd;
+}
+
+#doctors .row .item img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+#doctors .row .item .item-details {
+  margin-bottom: 2rem 0;
+}
+
+#doctors .row .item .item-details h3 {
+  font-size: 25px;
+}
+#doctors .row .item .item-details p {
+  margin: 10px 0 10px;
+  color: var(--light-blue);
+  font-weight: 600;
+}
+
+#doctors .row .item a {
+  border-radius: 500px;
+}
+/* Doctors end*/
+
+/*Blogs start*/
+#blogs {
+  background-color: #fff;
+}
+#blogs .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+
+#blogs .row .col {
+  justify-content: space-between;
+  box-shadow: 0.5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#blogs .row .col .col-content {
+  padding: 2rem 0;
+  position: relative;
+}
+
+#blogs .row .col .col-content::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light-blue);
+  height: 2px;
+  width: 0%;
+  transition: all 0.3s;
+}
+
+#blogs .row .col:hover .col-content::before {
+  width: 100%;
+}
+
+#blogs .row .col .col-content .date {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: var(--light-blue);
+  color: #fff;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+  margin-left: 1rem;
+}
+
+#blogs .row .col .col-content h3 {
+  margin: 10px 2px;
+  font-size: 18px;
+  font-weight: 800;
+}
+#blogs .row .col .col-content h3:hover {
+  print-color-adjust: var(--light-blue);
+}
+
+#blogs .row .col img {
+  width: 100%;
+}
+
+/*Blogs end*/
+
+/* Contact start*/
+/* توسيط الفورم بالكامل في منتصف الشاشة */
+.appointment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+}
+
+/* تصميم الفورم */
+.appointment-form {
+  background: white;
+  padding: 30px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Contact end*/
+
+/* Newsletter start*/
+
+#newsletter {
+  padding: 5rem 0;
+  background-color: var(--bg--newsletter);
+  opacity: 0, 3;
+}
+
+#newsletter .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: space-between; */
+  column-gap: 3rem;
+}
+
+#newsletter .row .col h2 {
+  margin-bottom: 10px;
+}
+
+#newsletter .row form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+#newsletter .row form input,
+#newsletter .row form button {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Newsletter end*/
