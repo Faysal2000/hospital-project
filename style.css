@@ -202,7 +202,8 @@ p {
 #help,
 #services,
 #blogs,
-#contact {
+#contact,
+#footer {
   padding: 6rem 0;
 }
 
@@ -708,3 +709,159 @@ button:hover {
 }
 
 /* Newsletter end*/
+
+/* Footer Start*/
+#footer {
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+#footer .container .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  justify-content: space-between;
+}
+#footer .container .row h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+#footer .container .row hr {
+  margin: 10px 0 2rem;
+  width: 50px;
+  height: 2px;
+  font-weight: 900;
+  border: none;
+  background-color: #fff;
+}
+
+#footer .container .row .col-1 {
+  color: #fff;
+}
+
+#footer .container .row .col-1 .social {
+  margin-top: 30px;
+  color: #fff;
+}
+
+#footer .container .row .col-1 .social a i {
+  border: 1px solid #fff;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 1.9;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+#footer .container .row .col-1 .social a i:hover {
+  background-color: #fff;
+  color: var(--light-blue);
+}
+
+#footer .container .row .col-2 li {
+  margin: 10px 0;
+}
+#footer .container .row .col-2 li i {
+  margin-right: 5px;
+}
+
+#footer .container .row .col-2 ul :hover {
+  /* color: var(--light--gray); */
+  transform: translateX(10px);
+  transition: all 0.7s ease;
+}
+
+#footer .container .row .col-3 ul {
+  line-height: 25px;
+}
+#footer .container .row p {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#footer .container .row .col-2 {
+  color: #fff;
+}
+
+#footer .container .row .col-2 ul li a {
+  color: #fff;
+}
+
+#footer .container .row .col-4 form {
+  position: absolute;
+}
+#footer .container .row .col-4 input {
+  padding: 15px;
+  width: 80%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 5px 0 0 5px;
+  color: #fff;
+  outline: none;
+}
+
+#footer .container .row .col-4 {
+  position: relative;
+}
+
+#footer .container .row .col-4 input::placeholder {
+  color: #fff;
+}
+
+#footer .container .row .col-4 form button {
+  position: absolute;
+  padding: 15px;
+  right: 10;
+  top: 10;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 20%;
+
+  /* position: absolute;
+  padding: 10px;
+  right: 10px; 
+  top: 10px; 
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 50px;
+  height: 42px;
+  cursor: pointer;  */
+}
+
+#footer .container .row .col-4 form button i {
+  color: var(--light-blue);
+  background-color: #fff;
+  font-size: 16px;
+}
+/* Footer End*/
+
+/*copyright start*/
+
+#footer .copyright {
+  background-color: #135fa1;
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+#footer .copyright p {
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer .copyright p a {
+  font-size: 20px;
+  margin-left: 10px;
+  color: var(--bg--white);
+}
+
+/*copyright end*/
