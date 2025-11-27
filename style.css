@@ -865,3 +865,66 @@ button:hover {
 }
 
 /*copyright end*/
+
+/* Responsive start*/
+@media (max-width: 800px) {
+  #home .navbar .logo {
+    width: 150px;
+  }
+
+  #home .navbar nav ul a {
+    margin: 0 5px;
+  }
+
+  #about .row,
+  #help .row,
+  #contact .row,
+  #newsletter .row,
+  #price-list .row {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  #help .row .col:first-child::before,
+  #help .row .col:nth-child(2)::before {
+    display: none;
+  }
+
+  #info .row,
+  #services .row,
+  #brand .row,
+  #doctors .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .title h2,
+  #call .call-content h2 {
+    font-size: 22px;
+  }
+
+  #home .navbar nav {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  #home .home-content .col h1 {
+    font-size: 30px;
+  }
+
+  #home .home-content .col a {
+    margin-bottom: 10px;
+  }
+
+  #blogs .row {
+    grid-template-columns: 1fr;
+  }
+
+  #footer .container .row {
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+  }
+}
+
+/* Responsive end*/
